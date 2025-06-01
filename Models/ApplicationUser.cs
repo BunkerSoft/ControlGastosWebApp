@@ -6,6 +6,5 @@ namespace ControlGastosWebApp.Models
     public class ApplicationUser : IdentityUser
     {
         public string? NombreCompleto { get; set; }
-        public DateTime FechaRegistro { get; set; } = DateTime.Now;
-    }
+        public DateTime? FechaRegistro { get; set; }    }
 }

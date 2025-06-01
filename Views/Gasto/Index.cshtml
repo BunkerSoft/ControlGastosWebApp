@@ -13,23 +13,31 @@
         </a>
     </div>
 
-    @(Html.DevExtreme().DataGrid<Movimiento>()
-        .DataSource(Model)
-        .ShowBorders(true)
-        .FilterRow(f => f.Visible(true))
-        .HeaderFilter(f => f.Visible(true))
-        .Columns(columns => {
-            columns.AddFor(m => m.Fecha).DataType(GridColumnDataType.Date);
-            columns.AddFor(m => m.FondoMonetario.Nombre).Caption("Fondo");
-            columns.AddFor(m => m.NombreComercio);
-            columns.AddFor(m => m.MontoTotal).Format("C2");
-            columns.AddFor(m => m.TipoDocumento);
-            columns.Add()
-                .Type(GridCommandColumnType.Buttons)
-                .Buttons(b => {
-                    b.Add().Name(GridColumnButtonName.Edit);
-                    b.Add().Name(GridColumnButtonName.Delete);
-                });
-        })
-    )
+    <!-- Tabla simple en lugar de DevExtreme -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Fondo</th>
+                <th>Nombre Comercio</th>
+                <th>Monto Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>@m.Fecha.ToShortDateString()</td>
+                <td>@m.FondoMonetario?.Nombre</td>
+                <td>@m.NombreComercio</td>
+                <td>@m.MontoTotal.ToString("C2")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@m.Id" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@m.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
 </div>

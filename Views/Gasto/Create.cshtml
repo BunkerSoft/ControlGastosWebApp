@@ -10,45 +10,26 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Fecha" class="control-label"></label>
-                    @(Html.DevExtreme().DateBox()
-                        .Value(DateTime.Now)
-                        .Name("Fecha")
-                    )
+                    <input asp-for="Fecha" class="form-control" />
                     <span asp-validation-for="Fecha" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="FondoMonetarioId" class="control-label">Fondo Monetario</label>
-                    @(Html.DevExtreme().SelectBox()
-                        .DataSource(ViewBag.FondosMonetarios)
-                        .DisplayExpr("Text")
-                        .ValueExpr("Value")
-                        .Name("FondoMonetarioId")
-                    )
+                    <select asp-for="FondoMonetarioId" class="form-control" asp-items="ViewBag.FondosMonetarios"></select>
                 </div>
             </div>
         </div>
 
-        <div id="detallesContainer">
-            @(Html.DevExtreme().DataGrid()
-                .ID("gridDetalles")
-                .ShowBorders(true)
-                .Editing(e => e
-                    .Mode(GridEditMode.Row)
-                    .AllowAdding(true)
-                    .AllowDeleting(true)
-                    .AllowUpdating(true))
-                .Columns(columns => {
-                    columns.AddFor(m => m.TipoGastoId)
-                        .Lookup(lookup => lookup
-                            .DataSource(ViewBag.TiposGasto)
-                            .DisplayExpr("Text")
-                            .ValueExpr("Value"));
-                    columns.AddFor(m => m.Monto)
-                        .Format("C2");
-                })
-            )
+        <div class="form-group">
+            <label asp-for="TipoGastoId" class="control-label">Tipo de Gasto</label>
+            <select asp-for="TipoGastoId" class="form-control" asp-items="ViewBag.TiposGasto"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Monto" class="control-label"></label>
+            <input asp-for="Monto" class="form-control" />
+            <span asp-validation-for="Monto" class="text-danger"></span>
         </div>
 
         <div class="form-group mt-3">
@@ -57,26 +38,3 @@
         </div>
     </form>
 </div>
-
-@section Scripts {
-    <script>
-        $(document).ready(function() {
-            $("#gridDetalles").on("rowInserted", function(e) {
-                calcularTotal();
-            });
-
-            $("#gridDetalles").on("rowRemoved", function(e) {
-                calcularTotal();
-            });
-
-            function calcularTotal() {
-                var grid = $("#gridDetalles").dxDataGrid("instance");
-                var total = 0;
-                grid.getDataSource().items().forEach(function(item) {
-                    total += item.Monto;
-                });
-                $("#MontoTotal").val(total);
-            }
-        });
-    </script>
-}

@@ -9,10 +9,8 @@ namespace ControlGastosWebApp.Models
 
         [Required]
         [StringLength(100)]
-        public string Nombre { get; set; }
-        
-        public string Descripcion { get; set; }
-        
-        public ICollection<Presupuesto> Presupuestos { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Descripcion { get; set; } = string.Empty;
+        public ICollection<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
     }
 }

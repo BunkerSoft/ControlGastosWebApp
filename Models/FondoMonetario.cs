@@ -11,8 +11,16 @@ namespace ControlGastosWebApp.Models
 
         [Required]
         [StringLength(100)]
-        public string Descripcion { get; set; }
+        public string Descripcion { get; set; } = string.Empty;
 
         public DateTime FechaCreacion { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string Nombre { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(50)]
+        public string Tipo { get; set; } = string.Empty;
     }
 }

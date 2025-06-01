@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using ControlGastosWebApp.Models;
 using ControlGastosWebApp.Data;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace ControlGastosWebApp.Controllers

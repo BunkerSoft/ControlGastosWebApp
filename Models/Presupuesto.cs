@@ -25,5 +25,10 @@ namespace ControlGastosWebApp.Models
         
         public string? UsuarioId { get; set; }
         public virtual ApplicationUser? Usuario { get; set; }
+
+        public int Mes { get; set; }
+        public int Año { get; set; }
+        public int TipoGastoId { get; set; }
+        public TipoGasto? TipoGasto { get; set; }
     }
 }

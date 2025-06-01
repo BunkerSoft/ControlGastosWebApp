@@ -15,6 +15,13 @@ namespace ControlGastosWebApp.Data
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Presupuesto> Presupuestos { get; set; }
 
+        public DbSet<TipoGasto> TiposGasto { get; set; } // O TiposGastos, dependiendo de cómo lo uses en tu código
+        public DbSet<Deposito> Depositos { get; set; }
+        public DbSet<FondoMonetario> FondosMonetarios { get; set; }
+
+  
+
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

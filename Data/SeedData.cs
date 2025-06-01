@@ -13,8 +13,8 @@ namespace ControlGastosWebApp.Data
             {
                 var adminUser = new ApplicationUser
                 {
-                    UserName = "admin@controlgastos.com",
-                    Email = "admin@controlgastos.com",
+                    UserName = "admin1@controlgastos.com",
+                    Email = "admin1@controlgastos.com",
                     NombreCompleto = "Administrador",
                     EmailConfirmed = true
                 };

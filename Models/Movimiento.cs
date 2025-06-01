@@ -24,6 +24,13 @@ namespace ControlGastosWebApp.Models
         public virtual ApplicationUser? Usuario { get; set; }
         
         public TipoMovimiento Tipo { get; set; }
+        
+        public int FondoMonetarioId { get; set; }
+        public FondoMonetario? FondoMonetario { get; set; }
+        public int TipoGastoId { get; set; }
+        public TipoGasto? TipoGasto { get; set; }
+        public string NombreComercio { get; set; } = string.Empty;
+        public decimal MontoTotal { get; set; }
     }
     
     public enum TipoMovimiento

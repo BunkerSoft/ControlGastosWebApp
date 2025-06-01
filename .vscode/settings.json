@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/af3e4d74-a81c-4093-82f2-766dd802f31c/resourceGroups/GrupoRecursosOperativo/providers/Microsoft.Web/sites/smartbiterp",
+    "appService.deploySubpath": "bin"
+}
