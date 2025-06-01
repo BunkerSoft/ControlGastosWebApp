@@ -226,3 +226,11 @@ C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net
 C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net8.0\ControlGastosWebApp.pdb
 C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net8.0\ControlGastosWebApp.genruntimeconfig.cache
 C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net8.0\ref\ControlGastosWebApp.dll
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\web.config
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\bundleconfig.json
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\ControlGastosWebApp.deps.json
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\ControlGastosWebApp.runtimeconfig.json
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\bin\Debug\net8.0\publish\ControlGastosWebApp.staticwebassets.endpoints.json
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net8.0\ControlGastosWebApp.sourcelink.json
