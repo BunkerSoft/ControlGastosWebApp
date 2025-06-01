@@ -1,0 +1,23 @@
+@model ControlGastosWebApp.Models.FondoMonetario
+
+<h2>Editar Fondo Monetario</h2>
+
+<form asp-action='Edit' method='post'>
+    <input type='hidden' asp-for='Id' />
+    <div class='form-group'>
+        <label asp-for='Nombre'></label>
+        <input asp-for='Nombre' class='form-control' />
+        <span asp-validation-for='Nombre' class='text-danger'></span>
+    </div>
+    <div class='form-group'>
+        <label asp-for='Tipo'></label>
+        <input asp-for='Tipo' class='form-control' />
+        <span asp-validation-for='Tipo' class='text-danger'></span>
+    </div>
+    <button type='submit' class='btn btn-primary'>Guardar</button>
+    <a asp-action='Index' class='btn btn-secondary'>Cancelar</a>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync('_ValidationScriptsPartial');}
+}

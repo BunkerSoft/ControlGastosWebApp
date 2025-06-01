@@ -1,0 +1,8 @@
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.AssemblyInfoInputs.cache
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.AssemblyInfo.cs
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.RazorAssemblyInfo.cache
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.RazorAssemblyInfo.cs
+C:\Users\Ingen\OneDrive\Escritorio\smartbiterp\ControlGastosWebApp\obj\Debug\net9.0\ControlGastosWebApp.csproj.AssemblyReference.cache

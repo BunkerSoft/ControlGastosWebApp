@@ -1,0 +1,35 @@
+@model IEnumerable<Movimiento>
+
+@{
+    ViewData["Title"] = "Registro de Gastos";
+}
+
+<div class="container-fluid">
+    <h2>Registro de Gastos</h2>
+    
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Nuevo Gasto
+        </a>
+    </div>
+
+    @(Html.DevExtreme().DataGrid<Movimiento>()
+        .DataSource(Model)
+        .ShowBorders(true)
+        .FilterRow(f => f.Visible(true))
+        .HeaderFilter(f => f.Visible(true))
+        .Columns(columns => {
+            columns.AddFor(m => m.Fecha).DataType(GridColumnDataType.Date);
+            columns.AddFor(m => m.FondoMonetario.Nombre).Caption("Fondo");
+            columns.AddFor(m => m.NombreComercio);
+            columns.AddFor(m => m.MontoTotal).Format("C2");
+            columns.AddFor(m => m.TipoDocumento);
+            columns.Add()
+                .Type(GridCommandColumnType.Buttons)
+                .Buttons(b => {
+                    b.Add().Name(GridColumnButtonName.Edit);
+                    b.Add().Name(GridColumnButtonName.Delete);
+                });
+        })
+    )
+</div>

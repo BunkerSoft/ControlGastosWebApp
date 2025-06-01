@@ -1,0 +1,82 @@
+@model Movimiento
+
+<div class="container">
+    <h2>Nuevo Gasto</h2>
+
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Fecha" class="control-label"></label>
+                    @(Html.DevExtreme().DateBox()
+                        .Value(DateTime.Now)
+                        .Name("Fecha")
+                    )
+                    <span asp-validation-for="Fecha" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="FondoMonetarioId" class="control-label">Fondo Monetario</label>
+                    @(Html.DevExtreme().SelectBox()
+                        .DataSource(ViewBag.FondosMonetarios)
+                        .DisplayExpr("Text")
+                        .ValueExpr("Value")
+                        .Name("FondoMonetarioId")
+                    )
+                </div>
+            </div>
+        </div>
+
+        <div id="detallesContainer">
+            @(Html.DevExtreme().DataGrid()
+                .ID("gridDetalles")
+                .ShowBorders(true)
+                .Editing(e => e
+                    .Mode(GridEditMode.Row)
+                    .AllowAdding(true)
+                    .AllowDeleting(true)
+                    .AllowUpdating(true))
+                .Columns(columns => {
+                    columns.AddFor(m => m.TipoGastoId)
+                        .Lookup(lookup => lookup
+                            .DataSource(ViewBag.TiposGasto)
+                            .DisplayExpr("Text")
+                            .ValueExpr("Value"));
+                    columns.AddFor(m => m.Monto)
+                        .Format("C2");
+                })
+            )
+        </div>
+
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a asp-action="Index" class="btn btn-secondary">Volver</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $("#gridDetalles").on("rowInserted", function(e) {
+                calcularTotal();
+            });
+
+            $("#gridDetalles").on("rowRemoved", function(e) {
+                calcularTotal();
+            });
+
+            function calcularTotal() {
+                var grid = $("#gridDetalles").dxDataGrid("instance");
+                var total = 0;
+                grid.getDataSource().items().forEach(function(item) {
+                    total += item.Monto;
+                });
+                $("#MontoTotal").val(total);
+            }
+        });
+    </script>
+}

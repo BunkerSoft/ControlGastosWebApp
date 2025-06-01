@@ -1,0 +1,11 @@
+@model ControlGastosWebApp.Models.Presupuesto
+
+<h2>Eliminar Presupuesto</h2>
+
+<h4>¿Está seguro de eliminar el presupuesto para @Model.TipoGasto?.Nombre del mes @Model.Mes.ToString("MMMM yyyy")?</h4>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
