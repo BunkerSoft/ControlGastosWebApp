@@ -11,8 +11,6 @@ namespace ControlGastosWebApp.Models
         [StringLength(100)]
         public string Nombre { get; set; } = string.Empty;
         
-        public string? Descripcion { get; set; }
-        
         public virtual ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
     }
 }

@@ -2,6 +2,11 @@
 
 <h2>Presupuestos</h2>
 
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
 <p><a asp-action='Create' class='btn btn-success'>Crear Nuevo</a></p>
 
 <table class='table table-striped'>

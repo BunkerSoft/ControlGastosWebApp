@@ -1,4 +1,4 @@
-# ControlGastosWebApp modificacion
+# ControlGastosWebApp modificacion 02062025
 
 Aplicación ASP.NET Core MVC para la gestión de gastos personales y empresariales, con autenticación, control de fondos, presupuestos y reportes.
 

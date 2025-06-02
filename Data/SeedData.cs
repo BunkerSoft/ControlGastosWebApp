@@ -8,18 +8,26 @@ namespace ControlGastosWebApp.Data
     {
         public static async Task Initialize(UserManager<ApplicationUser> userManager)
         {
-            // Crear usuario administrador por defecto
-            if (await userManager.FindByEmailAsync("admin@controlgastos.com") == null)
+            // Crear usuario administrador por defecto o actualizar contraseña si ya existe
+            var adminEmail = "adminazure@controlgastos.com";
+            var adminPassword = "Ok123!";
+            var adminUser = await userManager.FindByEmailAsync(adminEmail);
+            if (adminUser == null)
             {
-                var adminUser = new ApplicationUser
+                adminUser = new ApplicationUser
                 {
-                    UserName = "admin1@controlgastos.com",
-                    Email = "admin1@controlgastos.com",
-                    NombreCompleto = "Administrador",
+                    UserName = adminEmail,
+                    Email = adminEmail,
+                    NombreCompleto = "Administrador Azure",
                     EmailConfirmed = true
                 };
-
-                await userManager.CreateAsync(adminUser, "Admin123!");
+                await userManager.CreateAsync(adminUser, adminPassword);
+            }
+            else
+            {
+                // Restablecer contraseña si el usuario ya existe
+                await userManager.RemovePasswordAsync(adminUser);
+                await userManager.AddPasswordAsync(adminUser, adminPassword);
             }
         }
     }

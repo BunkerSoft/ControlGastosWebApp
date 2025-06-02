@@ -27,6 +27,7 @@ builder.Services.AddDevExpressControls();
 // Agregar MVC
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPresupuestoService, PresupuestoService>();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -41,6 +42,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
