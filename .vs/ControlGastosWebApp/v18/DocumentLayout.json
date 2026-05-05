@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|c:\\users\\ingen\\onedrive\\documentos\\github\\controlgastoswebapp\\upgradelog.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|solutionrelative:upgradelog.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|c:\\users\\ingen\\onedrive\\documentos\\github\\controlgastoswebapp\\publish\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|solutionrelative:publish\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|c:\\users\\ingen\\onedrive\\documentos\\github\\controlgastoswebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|c:\\users\\ingen\\onedrive\\documentos\\github\\controlgastoswebapp\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC60BED-5560-B975-61A6-5627CF46F79C}|ControlGastosWebApp.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpgradeLog.htm",
+              "DocumentMoniker": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\UpgradeLog.htm",
+              "RelativeDocumentMoniker": "UpgradeLog.htm",
+              "ToolTip": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\UpgradeLog.htm",
+              "RelativeToolTip": "UpgradeLog.htm",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAUwA4BAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-05T15:46:12.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\publish\\appsettings.json",
+              "RelativeDocumentMoniker": "publish\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\publish\\appsettings.json",
+              "RelativeToolTip": "publish\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-05T15:46:09.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-05T15:46:05.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\Ingen\\OneDrive\\Documentos\\GitHub\\ControlGastosWebApp\\Data\\SeedData.cs",
+              "RelativeToolTip": "Data\\SeedData.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:39:40.046Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
